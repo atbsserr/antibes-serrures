@@ -1,119 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Antibes Serrures Fichet - Numéro 1 Porte Blindée</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antibes Serrures Fichet - Serrurier Antibes</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Swiper.js pour le carousel d'avis -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- Header / Hero -->
 <header>
-    <div class="logo">Antibes Serrures Fichet</div>
-    <nav>
-        <a href="#slider">Galerie</a>
-        <a href="#services">Services</a>
-        <a href="#avis">Avis</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="contact-header">
-        <a href="tel:+33493616130">📞 04 93 61 61 30</a>
-        <a href="mailto:contact@antibes-serrures.com">✉️ contact@antibes-serrures.com</a>
+  <div class="container header-container">
+    <div class="logo">ANTIBES SERRURES FICHET</div>
+    <div class="cta">
+      <a href="tel:+33600000000" class="btn emergency">📞 Urgence dépannage</a>
     </div>
+  </div>
+  <div class="hero">
+    <h1>Serrurier professionnel à Antibes, Cannes et Monaco</h1>
+    <p>Devis gratuit avant intervention | Intervention rapide</p>
+    <a href="#devis" class="btn main-btn">Demander un devis</a>
+  </div>
 </header>
 
-<!-- HERO / ACCROCHE -->
-<section class="hero">
-    <h1>Numéro un de la porte blindée sur Antibes</h1>
-    <p>Installation, dépannage et sécurité pour votre domicile et commerce</p>
-    <a href="#contact" class="btn">Contactez-nous maintenant</a>
-</section>
-
-<!-- SLIDER D'IMAGES -->
-<section id="slider">
-  <div class="slider-container">
-    <div class="slides">
-      <img src="images/serrure.jpg" alt="Serrures Fichet">
-      <img src="images/porte-blindee.jpg" alt="Portes Blindées">
-      <img src="images/volet-roulant.jpg" alt="Volets Roulants">
-      <img src="images/coffre-fort.jpg" alt="Coffres-Forts">
-      <img src="images/porte-garage.jpg" alt="Portes de Garage">
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <h2>Nos Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Portes blindées</h3>
+        <p>Installation et dépannage de portes blindées toutes marques.</p>
+      </div>
+      <div class="service">
+        <h3>Serrures A2P</h3>
+        <p>Serrures certifiées A2P pour une sécurité maximale.</p>
+      </div>
+      <div class="service">
+        <h3>Coffres-forts</h3>
+        <p>Vente, installation et ouverture de coffres-forts.</p>
+      </div>
+      <div class="service">
+        <h3>Alarmes</h3>
+        <p>Alarme et systèmes de sécurité pour votre maison ou commerce.</p>
+      </div>
+      <div class="service">
+        <h3>Portes de garage</h3>
+        <p>Installation et dépannage portes de garage et volets roulants.</p>
+      </div>
+      <div class="service">
+        <h3>Ouverture multimarques</h3>
+        <p>Intervention rapide sur toutes marques de serrures.</p>
+      </div>
     </div>
-    <button class="prev-slide">&#10094;</button>
-    <button class="next-slide">&#10095;</button>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section id="services">
-<h2>Nos Services</h2>
-<div class="services-container">
-    <div class="service">
-        <img src="images/serrure.jpg" alt="Serrures Fichet">
-        <h3>Serrures</h3>
-        <p>Dépannage et installation rapide de toutes serrures Fichet.</p>
-    </div>
-    <div class="service">
-        <img src="images/porte-blindee.jpg" alt="Portes Blindées">
-        <h3>Portes Blindées</h3>
-        <p>Installation et dépannage pour sécuriser votre domicile ou commerce.</p>
-    </div>
-    <div class="service">
-        <img src="images/volet-roulant.jpg" alt="Volets Roulants">
-        <h3>Volets Roulants</h3>
-        <p>Réparation et motorisation pour sécurité et confort à domicile.</p>
-    </div>
-    <div class="service">
-        <img src="images/coffre-fort.jpg" alt="Coffres-Forts">
-        <h3>Coffres-Forts</h3>
-        <p>Installation et ouverture de coffres-forts Fichet pour protéger vos biens précieux.</p>
-    </div>
-    <div class="service">
-        <img src="images/porte-garage.jpg" alt="Portes de Garage">
-        <h3>Portes de Garage</h3>
-        <p>Installation et dépannage rapide pour sécuriser votre garage.</p>
-    </div>
-</div>
-</section>
-
-<!-- URGENCES -->
-<section class="urgence">
-<h2>Urgences 24/7</h2>
-<ul>
-    <li>Ouverture de portes et serrures</li>
-    <li>Dépannage portes blindées et coffres-forts</li>
-    <li>Réparation volets roulants et portes de garage</li>
-    <li>Mise en sécurité après effraction</li>
-</ul>
-<p>Nous intervenons toute l'année, 7j/7 et 24h/24 de Cannes à Monaco.</p>
-</section>
-
-<!-- AVIS CARROUSEL -->
+<!-- Avis clients / carousel -->
 <section id="avis">
-<h2>Ils nous recommandent</h2>
-<div class="carousel-container">
-    <div class="carousel" id="carousel"></div>
-    <button class="prev-btn">&#10094;</button>
-    <button class="next-btn">&#10095;</button>
-</div>
+  <div class="container">
+    <h2>Avis clients</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">⭐⭐⭐⭐⭐ Intervention rapide, équipe pro et sympathique !</div>
+        <div class="swiper-slide">⭐⭐⭐⭐⭐ Serrures A2P installées parfaitement, très sérieux.</div>
+        <div class="swiper-slide">⭐⭐⭐⭐⭐ Devis gratuit avant intervention, je recommande !</div>
+        <div class="swiper-slide">⭐⭐⭐⭐⭐ Coffre-fort ouvert sans dommage, excellent service.</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contactez-nous</h2>
-<p>Pour un dépannage immédiat, appelez ou envoyez un email :</p>
-<div class="contact-buttons">
-    <a href="tel:+33493616130" class="btn">📞 Appeler maintenant</a>
-    <a href="mailto:contact@antibes-serrures.com" class="btn">✉️ Envoyer un email</a>
-</div>
+<!-- Formulaire devis rapide -->
+<section id="devis">
+  <div class="container">
+    <h2>Demandez votre devis gratuit</h2>
+    <form action="https://formspree.io/f/xxxxxx" method="POST">
+      <input type="text" name="nom" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="telephone" placeholder="Téléphone" required>
+      <select name="service" required>
+        <option value="">Choisissez un service</option>
+        <option value="porte-blindee">Porte blindée</option>
+        <option value="serrure-a2p">Serrure A2P</option>
+        <option value="coffre-fort">Coffre-fort</option>
+        <option value="alarme">Alarme</option>
+        <option value="porte-garage">Porte de garage / volet roulant</option>
+        <option value="ouverture-multimarques">Ouverture multimarques</option>
+      </select>
+      <label>
+        <input type="checkbox" name="urgence"> Intervention urgente
+      </label>
+      <button type="submit" class="btn main-btn">Envoyer le devis</button>
+    </form>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer>
-<p>&copy; 2026 Antibes Serrures Fichet | Dépannage 24/7 Cannes à Monaco</p>
+  <div class="container footer-container">
+    <p>© 2026 Antibes Serrures Fichet - Serrurier Antibes, Cannes, Monaco</p>
+    <p>Tél : <a href="tel:+33600000000">06 00 00 00 00</a></p>
+  </div>
 </footer>
 
-<script src="carousel.js"></script>
-<script src="slider.js"></script>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
