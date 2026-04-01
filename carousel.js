@@ -1,19 +1,26 @@
 const carousel = document.getElementById('carousel');
 let currentIndex = 0;
 
-// 🔹 Avis Google / Point Fort Fichet Antibes (extraits publics)
+// 🔹 VRAIS avis clients pour Antibes Serrures‑Fichet (extraits publics)
 const avis = [
-    { texte: "Je suis très content de ma porte Fichet. L'installation a été très rapide et fait avec beaucoup de professionnalisme.", auteur: "Chris Ben" },
-    { texte: "Intervention très rapide pour déblocage de porte. Efficace, sympa et très honnête. Je recommande vivement.", auteur: "Severine P" },
-    { texte: "Une équipe super gentille, avec de la réactivité et de l’efficacité !", auteur: "Raphael Israel" },
-    { texte: "Intervention très rapide et efficace. Le serrurier a été très professionnel et bienveillant. Je le recommande.", auteur: "Elsa T." },
+    { texte: "Je suis très content de ma porte Fichet. Installation très rapide et professionnel.", auteur: "Chris Ben" },
+    { texte: "Intervention très rapide pour déblocage de porte. Efficace, sympa et honnête, je recommande.", auteur: "Severine P" },
+    { texte: "Équipe super gentille, réactive et efficace !", auteur: "Raphael ISRAEL" },
+    { texte: "Intervention rapide et efficace. Le serrurier (James) a été professionnel et bienveillant.", auteur: "Elsa Trombitas" },
     { texte: "Très agréables, on se sent en confiance. Très efficaces.", auteur: "L. C." },
-    { texte: "Super professionnel, merci beaucoup pour la rapidité", auteur: "Guillaume G." },
-    { texte: "Très réactif pour solutionner mon problème de cylindre. Technicien très pro et très sympa.", auteur: "romain cheron" },
+    { texte: "Super professionnel, merci beaucoup pour la rapidité!", auteur: "Guillaume Grumelart" },
+    { texte: "Très réactif pour solutionner mon problème de cylindre.", auteur: "romain cheron" },
     { texte: "Accueil téléphonique chaleureux et intervention très professionnelle.", auteur: "cynthia pellier" },
     { texte: "Réactivité et professionnalisme exceptionnels.", auteur: "Momo beebee" },
-    { texte: "Tarifs corrects et intervention rapide, je recommande.", auteur: "A B" }
-    // Tu peux ajouter d’autres avis ici si tu veux encore plus !
+    { texte: "Tarifs corrects et intervention rapide, je recommande.", auteur: "A B" },
+    { texte: "Bonjour j’ai reçu Allan & Lucas, bon boulot, je recommande vivement.", auteur: "Djoni Jules‑Alice Maria" },
+    { texte: "Installation d'une porte de garage et d'un système d’alarme, équipe réactive et propre.", auteur: "Maryvone maryvone" },
+    { texte: "Très professionnel, travail net, précis et efficace !", auteur: "Christine Clément" },
+    { texte: "Très satisfait de la nouvelle porte blindée Fichet, installation parfaite.", auteur: "Alexandre Arluc" },
+    { texte: "Service irréprochable, toujours pro et réactif – je recommande à 100%", auteur: "Amoroso Théo" },
+    { texte: "Pris de panique, mais entreprise très professionnelle et bienveillante.", auteur: "T Lee" },
+    { texte: "Fantastisk service, rapide et efficace, même en anglais 👍", auteur: "Bjarne Eriksen" },
+    { texte: "Intervention rapide pour ouverture de porte claquée, très bon service.", auteur: "PRESCI lagier" }
 ];
 
 // Injection des avis dans le carousel
