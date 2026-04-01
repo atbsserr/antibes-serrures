@@ -1,30 +1,187 @@
+/* Couleurs Fichet Point Fort */
 :root {
     --fichet-green: #006837;
-    --fichet-black: #000;
+    --fichet-black: #000000;
+    --fichet-white: #ffffff;
     --fichet-light: #f5f5f5;
-    --fichet-white: #fff;
 }
 
-body {margin:0;font-family:Arial,sans-serif;background:var(--fichet-light);color:var(--fichet-black);}
-header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;background:var(--fichet-black);color:var(--fichet-white);padding:1rem 2rem;}
-header .logo{color:var(--fichet-green);font-weight:bold;font-size:1.6rem;}
-header nav a{color:white;text-decoration:none;margin-left:1rem;font-weight:bold;}
-header nav a:hover{color:var(--fichet-green);}
-.contact-header a{margin-left:1rem;color:var(--fichet-green);text-decoration:none;}
-.hero{text-align:center;padding:3rem 1rem;background:var(--fichet-green);color:var(--fichet-white);}
-.hero .btn{background:var(--fichet-black);color:var(--fichet-green);padding:1rem 2rem;border-radius:5px;text-decoration:none;font-weight:bold;}
-.hero .btn:hover{background:var(--fichet-white);color:var(--fichet-black);}
-.services-container{display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;padding:2rem;}
-.service{background:white;border:2px solid var(--fichet-green);border-radius:10px;padding:1rem;text-align:center;width:250px;}
-.service img{width:100%;border-radius:10px;}
-.urgence{background:white;border:2px solid var(--fichet-green);border-radius:10px;padding:2rem;margin:2rem;}
-.carousel-container{position:relative;width:90%;max-width:700px;margin:2rem auto;overflow:hidden;}
-.carousel{display:flex;transition:transform 0.5s ease-in-out;}
-.avis-slide{min-width:100%;box-sizing:border-box;background:var(--fichet-white);border:2px solid var(--fichet-green);border-radius:10px;padding:1.5rem;text-align:center;}
-.avis-slide p{font-size:1rem;margin-bottom:.8rem;}
-.avis-slide span{font-weight:bold;color:var(--fichet-green);}
-.prev-btn,.next-btn{position:absolute;top:50%;transform:translateY(-50%);background:var(--fichet-green);color:white;border:none;font-size:1.5rem;padding:.5rem;cursor:pointer;border-radius:50%;}
-.prev-btn:hover,.next-btn:hover{background:var(--fichet-black);}
-.contact-buttons{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
-.contact-buttons .btn{padding:1rem 2rem;background:var(--fichet-green);color:white;text-decoration:none;border-radius:5px;font-weight:bold;}
-.contact-buttons .btn:hover{background:var(--fichet-black);}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fichet-light);
+    color: var(--fichet-black);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--fichet-black);
+    color: var(--fichet-white);
+    padding: 1rem 2rem;
+}
+header .logo {
+    color: var(--fichet-green);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+header nav a:hover { color: var(--fichet-green); }
+.contact-header a {
+    margin-left: 1rem;
+    color: var(--fichet-green);
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: var(--fichet-green);
+    color: var(--fichet-white);
+}
+.hero .btn {
+    background: var(--fichet-black);
+    color: var(--fichet-green);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero .btn:hover {
+    background: var(--fichet-white);
+    color: var(--fichet-black);
+}
+
+/* SERVICES */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+.service {
+    background: var(--fichet-white);
+    border: 2px solid var(--fichet-green);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    width: 250px;
+}
+.service img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* URGENCES */
+.urgence {
+    background: var(--fichet-white);
+    border: 2px solid var(--fichet-green);
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+/* CARROUSEL D'AVIS */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.avis-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    background: var(--fichet-white);
+    border: 2px solid var(--fichet-green);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+}
+.avis-slide p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+}
+.avis-slide span {
+    font-weight: bold;
+    color: var(--fichet-green);
+}
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--fichet-green);
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev-btn:hover, .next-btn:hover { background: var(--fichet-black); }
+
+/* CONTACT */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.contact-buttons .btn {
+    padding: 1rem 2rem;
+    background: var(--fichet-green);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.contact-buttons .btn:hover {
+    background: var(--fichet-black);
+}
+
+/* SLIDER D'IMAGES */
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border: 2px solid var(--fichet-green);
+    border-radius: 10px;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slides img {
+    width: 100%;
+    border-radius: 10px;
+}
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--fichet-green);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev-slide:hover, .next-slide:hover {
+    background: var(--fichet-black);
+}
